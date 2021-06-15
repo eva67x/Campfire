@@ -8,7 +8,7 @@ const fs = require('fs');
 http.createServer(function (req, res) {
     let queryObject = url.parse(req.url,true).query; //  Query Object
     let path = url.parse(req.url,true).path.split("?")[0];
-    
+
     res.writeHead(200, {'Content-Type': 'text/html'}); // We're sending HTML data here.
 
     if(mainconfig.servermode == "directory") {
@@ -22,4 +22,4 @@ http.createServer(function (req, res) {
     } else {
         res.end('A supported mode was not chosen.');
     }
-  }).listen(8080); // Listen on PORT 8080.
+  }).listen(mainconfig.port); // Listen.

@@ -1,3 +1,4 @@
 {
-    "servermode":"directory"
+    "servermode":"directory",
+    "port":8080
 }
