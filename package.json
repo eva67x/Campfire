@@ -1,0 +1,23 @@
+{
+  "name": "campfire",
+  "version": "0.0.0",
+  "description": "A server software written in node designed to be feature-rich and customizeable. ",
+  "main": "start.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TFTWPhoenix/Campfire.git"
+  },
+  "keywords": [
+    "Server",
+    "Web"
+  ],
+  "author": "TFTWPhoenix",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/TFTWPhoenix/Campfire/issues"
+  },
+  "homepage": "https://github.com/TFTWPhoenix/Campfire#readme"
+}
