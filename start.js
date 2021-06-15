@@ -19,6 +19,8 @@ http.createServer(function (req, res) {
         } else {
             res.end(fs.readFileSync("internal/404.html"));
         }
+    } else if(mainconfig.servermode == "maintenance") {
+        res.end(fs.readFileSync("internal/maintenance.html"));
     } else {
         res.end('A supported mode was not chosen.');
     }
