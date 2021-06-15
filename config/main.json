@@ -1,4 +1,4 @@
 {
-    "servermode":"maintenance",
+    "servermode":"directory",
     "port":8080
 }

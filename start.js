@@ -22,6 +22,6 @@ http.createServer(function (req, res) {
     } else if(mainconfig.servermode == "maintenance") {
         res.end(fs.readFileSync("internal/maintenance.html"));
     } else {
-        res.end('A supported mode was not chosen.');
+        res.end('Server Configuration Error: No supported mode was chosen in the config. Please contact the administrators.');
     }
   }).listen(mainconfig.port); // Listen.
